@@ -1,0 +1,67 @@
+{
+  "name": "ShoreSquad - Beach Cleanup Coordination",
+  "short_name": "ShoreSquad",
+  "description": "Rally your crew, track weather, and coordinate beach cleanups with ShoreSquad",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0077be",
+  "theme_color": "#0077be",
+  "orientation": "portrait-primary",
+  "categories": ["environmental", "social", "utilities"],
+  "lang": "en",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://aliciaywy.github.io/Alicia/assets/screenshot-mobile.jpg",
+      "sizes": "540x720",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://aliciaywy.github.io/Alicia/assets/screenshot-desktop.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Check Weather",
+      "short_name": "Weather",
+      "description": "Check current weather conditions for cleanup planning",
+      "url": "/#weather",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌤️</text></svg>",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "View Map",
+      "short_name": "Map",
+      "description": "Find beach cleanup locations near you",
+      "url": "/#map",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}

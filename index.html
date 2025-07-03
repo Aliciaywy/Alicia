@@ -1,116 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Student Wellness Platform - Boost your well-being through personalized daily tips, mindfulness tools, and AI-powered wellness support">
-    <title>Mental Health Tips & Mindfulness - Student Wellness Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="🌊 ShoreSquad - Rally your crew, track weather, and coordinate beach cleanups. Join 25,000+ volunteers making our oceans cleaner, one beach at a time.">
+    <meta name="keywords" content="beach cleanup, environmental action, ocean conservation, volunteer, Singapore, weather tracking, community">
+    <meta name="author" content="ShoreSquad Team">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en">
     
-    <!-- CSS -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aliciaywy.github.io/Alicia/">
+    <meta property="og:title" content="🌊 ShoreSquad - Beach Cleanup Coordination">
+    <meta property="og:description" content="Rally your crew, track weather, and coordinate beach cleanups with our interactive platform. Join the movement!">
+    <meta property="og:image" content="https://aliciaywy.github.io/Alicia/assets/og-image.jpg">
+    <meta property="og:site_name" content="ShoreSquad">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aliciaywy.github.io/Alicia/">
+    <meta property="twitter:title" content="🌊 ShoreSquad - Beach Cleanup Coordination">
+    <meta property="twitter:description" content="Rally your crew, track weather, and coordinate beach cleanups with our interactive platform. Join the movement!">
+    <meta property="twitter:image" content="https://aliciaywy.github.io/Alicia/assets/twitter-image.jpg">
+    
+    <!-- Progressive Web App -->
+    <meta name="theme-color" content="#0077be">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ShoreSquad">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Title -->
+    <title>🌊 ShoreSquad - Beach Cleanup Coordination | Rally Your Crew</title>
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdn.botpress.cloud">
+    <link rel="dns-prefetch" href="https://api.data.gov.sg">
+    <link rel="dns-prefetch" href="https://maps.googleapis.com">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="css/styles.css" as="style">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧘</text></svg>">
+    <!-- Favicons and Icons -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+    <link rel="manifest" href="manifest.json">
     
     <!-- Preload critical resources -->
     <link rel="preload" href="data/tips.json" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="js/app.js" as="script">
+    
+    <!-- Performance and Security -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "ShoreSquad",
+      "description": "Beach cleanup coordination platform connecting volunteers worldwide",
+      "url": "https://aliciaywy.github.io/Alicia/",
+      "applicationCategory": "EnvironmentalApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "ShoreSquad Team"
+      }
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen" aria-hidden="true">
+        <div class="loading-animation">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <p>Loading ShoreSquad...</p>
+        </div>
+    </div>
+
     <!-- Header -->
     <header role="banner" class="header">
         <div class="container">
             <h1 class="logo">
-                <span class="logo-icon" aria-hidden="true">🧘</span>
-                Mental Wellness
+                <span class="logo-icon" aria-hidden="true">🌊</span>
+                ShoreSquad
+                <span class="logo-tagline">Beach Cleanup Coordination</span>
             </h1>
             <nav class="nav" role="navigation" aria-label="Main navigation">
                 <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
                 </button>
                 <ul class="nav-list">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#tips" class="nav-link">Tips</a></li>
-                    <li><a href="#mood" class="nav-link">Mood Check</a></li>
-                    <li><a href="#favorites" class="nav-link">Favorites</a></li>
+                    <li><a href="#home" class="nav-link">🏠 Home</a></li>
+                    <li><a href="#weather" class="nav-link">🌤️ Weather</a></li>
+                    <li><a href="#map" class="nav-link">🗺️ Map</a></li>
+                    <li><a href="#tips" class="nav-link">💡 Tips</a></li>
+                    <li><a href="#impact" class="nav-link">📊 Impact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main role="main" class="main">
+    <main role="main" class="main" id="main-content">
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="container">
-                <h2 class="hero-title">Your Personal Wellness Companion</h2>
-                <p class="hero-subtitle">Discover personalized tips, practice mindfulness, and build healthy habits tailored for students</p>
-                <div class="hero-actions">
-                    <button class="btn btn-primary" onclick="scrollToSection('mood')">Check Your Mood</button>
-                    <button class="btn btn-secondary" onclick="scrollToSection('tips')">Explore Tips</button>
-                </div>
+            <div class="hero-background">
+                <div class="wave-animation"></div>
             </div>
-        </section>
-
-        <!-- Mood Check-in Section -->
-        <section id="mood" class="mood-section">
             <div class="container">
-                <h2 class="section-title">How are you feeling today?</h2>
-                <div class="mood-container">
-                    <div class="mood-selector">
-                        <button class="mood-btn" data-mood="stressed" aria-label="Feeling stressed">
-                            <span class="mood-emoji">😰</span>
-                            <span class="mood-label">Stressed</span>
+                <div class="hero-content">
+                    <h2 class="hero-title">Rally Your Crew for Ocean Conservation</h2>
+                    <p class="hero-subtitle">Track weather, coordinate with volunteers, and make our beaches cleaner. Join 25,000+ environmental warriors making a difference!</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">1,500+</span>
+                            <span class="stat-label">Beaches Cleaned</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">25,000+</span>
+                            <span class="stat-label">Volunteers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">22.7T</span>
+                            <span class="stat-label">Trash Removed (kg)</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="scrollToSection('weather')" aria-describedby="weather-desc">
+                            🌤️ Check Weather
                         </button>
-                        <button class="mood-btn" data-mood="anxious" aria-label="Feeling anxious">
-                            <span class="mood-emoji">😟</span>
-                            <span class="mood-label">Anxious</span>
-                        </button>
-                        <button class="mood-btn" data-mood="neutral" aria-label="Feeling neutral">
-                            <span class="mood-emoji">😐</span>
-                            <span class="mood-label">Neutral</span>
-                        </button>
-                        <button class="mood-btn" data-mood="happy" aria-label="Feeling happy">
-                            <span class="mood-emoji">😊</span>
-                            <span class="mood-label">Happy</span>
-                        </button>
-                        <button class="mood-btn" data-mood="energetic" aria-label="Feeling energetic">
-                            <span class="mood-emoji">🤩</span>
-                            <span class="mood-label">Energetic</span>
+                        <button class="btn btn-secondary" onclick="scrollToSection('map')" aria-describedby="map-desc">
+                            🗺️ Find Cleanups
                         </button>
                     </div>
-                    <div class="mood-feedback" id="moodFeedback" role="status" aria-live="polite"></div>
+                    <div class="hero-descriptions" style="display: none;">
+                        <p id="weather-desc">Check real-time weather conditions for cleanup planning</p>
+                        <p id="map-desc">Discover beach cleanup events near you</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Tips Section -->
+        <!-- Weather Section -->
+        <section id="weather" class="weather-section">
+            <div class="container">
+                <h2 class="section-title">🌤️ Weather Forecast</h2>
+                <p class="section-subtitle">Plan your beach cleanup with real-time Singapore weather data</p>
+                <div class="weather-container">
+                    <div class="current-weather" id="currentWeather">
+                        <div class="weather-loading">
+                            <div class="spinner" aria-hidden="true"></div>
+                            <p>Loading weather data...</p>
+                        </div>
+                    </div>
+                    <div class="weather-tips" id="weatherTips">
+                        <h3>🏖️ Cleanup Conditions</h3>
+                        <div class="condition-indicator" id="cleanupCondition">
+                            <span class="condition-status">Checking conditions...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Map Section -->
+        <section id="map" class="map-section">
+            <div class="container">
+                <h2 class="section-title">🗺️ Cleanup Locations</h2>
+                <p class="section-subtitle">Current Focus: Pasir Ris Beach, Singapore</p>
+                <div class="map-container">
+                    <div class="map-placeholder" id="mapContainer">
+                        <div class="map-loading">
+                            <span class="map-icon">🌊</span>
+                            <p>Interactive map loading...</p>
+                            <small>Click to view full map</small>
+                        </div>
+                    </div>
+                    <div class="location-details">
+                        <h3>📍 Next Cleanup Event</h3>
+                        <div class="event-card">
+                            <div class="event-header">
+                                <span class="event-title">Pasir Ris Beach Cleanup</span>
+                                <span class="event-status">🟢 Active</span>
+                            </div>
+                            <div class="event-details">
+                                <p><strong>📅 Date:</strong> Next Weekend</p>
+                                <p><strong>🕐 Time:</strong> 8:00 AM - 12:00 PM</p>
+                                <p><strong>📍 Meeting Point:</strong> Street View Asia</p>
+                                <p><strong>🧭 Coordinates:</strong> 1.381497, 103.955574</p>
+                                <p><strong>👥 Volunteers:</strong> <span id="volunteerCount">23+</span> signed up</p>
+                            </div>
+                            <button class="btn btn-primary join-event-btn">
+                                ✋ Join This Cleanup
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        <!-- Environmental Tips Section -->
         <section id="tips" class="tips-section">
             <div class="container">
-                <h2 class="section-title">Personalized Wellness Tips</h2>
+                <h2 class="section-title">💡 Eco-Action Tips</h2>
+                <p class="section-subtitle">Learn how to make your cleanup more effective and sustainable</p>
                 <div class="tips-filters">
-                    <button class="filter-btn active" data-category="all">All Tips</button>
-                    <button class="filter-btn" data-category="breathing">Breathing</button>
-                    <button class="filter-btn" data-category="time-management">Time Management</button>
-                    <button class="filter-btn" data-category="affirmations">Affirmations</button>
-                    <button class="filter-btn" data-category="mood-boosters">Mood Boosters</button>
+                    <button class="filter-btn active" data-category="all">🌊 All Tips</button>
+                    <button class="filter-btn" data-category="preparation">🎒 Preparation</button>
+                    <button class="filter-btn" data-category="safety">⚠️ Safety</button>
+                    <button class="filter-btn" data-category="sorting">♻️ Sorting</button>
+                    <button class="filter-btn" data-category="motivation">💪 Motivation</button>
                 </div>
                 <div class="tips-container" id="tipsContainer">
                     <!-- Tips will be loaded dynamically -->
-                    <div class="loading" aria-live="polite">Loading wellness tips...</div>
+                    <div class="loading-grid" aria-live="polite">
+                        <div class="loading-card"></div>
+                        <div class="loading-card"></div>
+                        <div class="loading-card"></div>
+                        <p>Loading environmental tips...</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Favorites Section -->
-        <section id="favorites" class="favorites-section">
+        <!-- Impact Tracking Section -->
+        <section id="impact" class="impact-section">
             <div class="container">
-                <h2 class="section-title">Your Favorite Tips</h2>
-                <div class="favorites-container" id="favoritesContainer">
-                    <div class="empty-state">
-                        <span class="empty-icon" aria-hidden="true">⭐</span>
-                        <p>No favorites yet. Start by bookmarking tips that resonate with you!</p>
+                <h2 class="section-title">📊 Our Collective Impact</h2>
+                <p class="section-subtitle">See the real difference we're making together</p>
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon">🏖️</div>
+                        <div class="impact-stat">
+                            <span class="impact-number" data-target="1500">0</span>
+                            <span class="impact-unit">+</span>
+                        </div>
+                        <div class="impact-label">Beaches Cleaned</div>
+                        <div class="impact-description">Across 15+ countries worldwide</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon">👥</div>
+                        <div class="impact-stat">
+                            <span class="impact-number" data-target="25000">0</span>
+                            <span class="impact-unit">+</span>
+                        </div>
+                        <div class="impact-label">Active Volunteers</div>
+                        <div class="impact-description">Environmental warriors like you</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon">♻️</div>
+                        <div class="impact-stat">
+                            <span class="impact-number" data-target="22700">0</span>
+                            <span class="impact-unit">kg</span>
+                        </div>
+                        <div class="impact-label">Trash Collected</div>
+                        <div class="impact-description">Removed from our oceans</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon">🌍</div>
+                        <div class="impact-stat">
+                            <span class="impact-number" data-target="85">0</span>
+                            <span class="impact-unit">%</span>
+                        </div>
+                        <div class="impact-label">Volunteer Satisfaction</div>
+                        <div class="impact-description">Would join again</div>
+                    </div>
+                </div>
+                
+                <!-- Recent Activities -->
+                <div class="recent-activities">
+                    <h3>🔥 Recent Activities</h3>
+                    <div class="activity-feed" id="activityFeed">
+                        <div class="activity-item">
+                            <span class="activity-icon">🌊</span>
+                            <div class="activity-content">
+                                <p><strong>Marina Bay Cleanup</strong> completed</p>
+                                <small>45 volunteers • 120kg collected • 2 hours ago</small>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">👋</span>
+                            <div class="activity-content">
+                                <p><strong>Sarah Chen</strong> joined East Coast cleanup</p>
+                                <small>This Saturday • 15 minutes ago</small>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">📈</span>
+                            <div class="activity-content">
+                                <p><strong>Monthly Goal</strong> 85% achieved</p>
+                                <small>2,550kg of 3,000kg target • Updated 1 hour ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>🌊 Ready to Make Waves?</h2>
+                    <p>Join thousands of volunteers making our oceans cleaner. Every piece of trash removed makes a difference.</p>
+                    <div class="cta-actions">
+                        <button class="btn btn-primary btn-large" onclick="scrollToSection('weather')">
+                            🚀 Start Your Journey
+                        </button>
+                        <button class="btn btn-outline btn-large" onclick="window.open('https://github.com/Aliciaywy/Alicia', '_blank')">
+                            🔗 Learn More
+                        </button>
                     </div>
                 </div>
             </div>
@@ -120,18 +337,85 @@
     <!-- Footer -->
     <footer role="contentinfo" class="footer">
         <div class="container">
-            <p>&copy; 2025 Student Wellness Platform. Built with 💚 for Republic Polytechnic students.</p>
-            <p class="footer-note">Remember: These tips are for general wellness. For serious mental health concerns, please consult with a healthcare professional.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌊 ShoreSquad</h3>
+                    <p>Connecting ocean lovers worldwide for impactful beach cleanups.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Follow us on Twitter" class="social-link">🐦</a>
+                        <a href="#" aria-label="Join our Instagram" class="social-link">�</a>
+                        <a href="#" aria-label="Connect on LinkedIn" class="social-link">💼</a>
+                        <a href="https://github.com/Aliciaywy/Alicia" aria-label="View source code" class="social-link">💻</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>🗺️ Locations</h4>
+                    <ul>
+                        <li><a href="#map">Singapore Beaches</a></li>
+                        <li><a href="#map">Upcoming Events</a></li>
+                        <li><a href="#tips">Cleanup Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>🤝 Community</h4>
+                    <ul>
+                        <li><a href="#impact">Our Impact</a></li>
+                        <li><a href="#tips">Eco Tips</a></li>
+                        <li><a href="https://github.com/Aliciaywy/Alicia/discussions">Discussions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>📞 Support</h4>
+                    <ul>
+                        <li><a href="https://github.com/Aliciaywy/Alicia/issues">Report Issues</a></li>
+                        <li><a href="mailto:shoresquad@environmental.org">Contact Us</a></li>
+                        <li><a href="#weather">Weather Updates</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShoreSquad. Made with 💙 for our oceans. All rights reserved.</p>
+                <p class="footer-note">🌍 Together, we can make our oceans cleaner, one beach at a time.</p>
+            </div>
         </div>
     </footer>
 
     <!-- Toast Notification -->
     <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-content">
+            <span class="toast-icon"></span>
             <span class="toast-message"></span>
-            <button class="toast-close" aria-label="Close notification">&times;</button>
+            <button class="toast-close" aria-label="Close notification" tabindex="0">&times;</button>
         </div>
-    </div>    <!-- JavaScript -->
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+        <span>↑</span>
+    </button>
+
+    <!-- Service Worker Registration -->
+    <script>
+        // Progressive Web App features
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(registration => console.log('SW registered'))
+                    .catch(registrationError => console.log('SW registration failed'));
+            });
+        }
+        
+        // Loading screen
+        window.addEventListener('load', () => {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }
+        });
+    </script><!-- JavaScript -->
     <script src="js/app.js"></script>
     
     <!-- Chatbot Scripts -->
