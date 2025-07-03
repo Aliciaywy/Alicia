@@ -1,0 +1,59 @@
+name: Validate Project Files
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Validate HTML
+      run: |
+        echo "Checking HTML structure..."
+        if [ -f "index.html" ]; then
+          echo "✅ index.html found"
+        else
+          echo "❌ index.html not found"
+          exit 1
+        fi
+    
+    - name: Validate CSS
+      run: |
+        echo "Checking CSS file..."
+        if [ -f "css/styles.css" ]; then
+          echo "✅ CSS file found"
+        else
+          echo "❌ CSS file not found"
+          exit 1
+        fi
+    
+    - name: Validate JavaScript
+      run: |
+        echo "Checking JavaScript file..."
+        if [ -f "js/app.js" ]; then
+          echo "✅ JavaScript file found"
+        else
+          echo "❌ JavaScript file not found"
+          exit 1
+        fi
+    
+    - name: Validate JSON Data
+      run: |
+        echo "Validating JSON syntax..."
+        if [ -f "data/tips.json" ]; then
+          if python3 -m json.tool data/tips.json > /dev/null 2>&1; then
+            echo "✅ JSON is valid"
+          else
+            echo "❌ JSON syntax error"
+            exit 1
+          fi
+        else
+          echo "❌ JSON data file not found"
+          exit 1
+        fi

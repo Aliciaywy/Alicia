@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Wellness Platform - Boost your well-being through personalized daily tips, mindfulness tools, and AI-powered wellness support">
+    <title>Mental Health Tips & Mindfulness - Student Wellness Platform</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧘</text></svg>">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="data/tips.json" as="fetch" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Header -->
+    <header role="banner" class="header">
+        <div class="container">
+            <h1 class="logo">
+                <span class="logo-icon" aria-hidden="true">🧘</span>
+                Mental Wellness
+            </h1>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#tips" class="nav-link">Tips</a></li>
+                    <li><a href="#mood" class="nav-link">Mood Check</a></li>
+                    <li><a href="#favorites" class="nav-link">Favorites</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main" class="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h2 class="hero-title">Your Personal Wellness Companion</h2>
+                <p class="hero-subtitle">Discover personalized tips, practice mindfulness, and build healthy habits tailored for students</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="scrollToSection('mood')">Check Your Mood</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('tips')">Explore Tips</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mood Check-in Section -->
+        <section id="mood" class="mood-section">
+            <div class="container">
+                <h2 class="section-title">How are you feeling today?</h2>
+                <div class="mood-container">
+                    <div class="mood-selector">
+                        <button class="mood-btn" data-mood="stressed" aria-label="Feeling stressed">
+                            <span class="mood-emoji">😰</span>
+                            <span class="mood-label">Stressed</span>
+                        </button>
+                        <button class="mood-btn" data-mood="anxious" aria-label="Feeling anxious">
+                            <span class="mood-emoji">😟</span>
+                            <span class="mood-label">Anxious</span>
+                        </button>
+                        <button class="mood-btn" data-mood="neutral" aria-label="Feeling neutral">
+                            <span class="mood-emoji">😐</span>
+                            <span class="mood-label">Neutral</span>
+                        </button>
+                        <button class="mood-btn" data-mood="happy" aria-label="Feeling happy">
+                            <span class="mood-emoji">😊</span>
+                            <span class="mood-label">Happy</span>
+                        </button>
+                        <button class="mood-btn" data-mood="energetic" aria-label="Feeling energetic">
+                            <span class="mood-emoji">🤩</span>
+                            <span class="mood-label">Energetic</span>
+                        </button>
+                    </div>
+                    <div class="mood-feedback" id="moodFeedback" role="status" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section id="tips" class="tips-section">
+            <div class="container">
+                <h2 class="section-title">Personalized Wellness Tips</h2>
+                <div class="tips-filters">
+                    <button class="filter-btn active" data-category="all">All Tips</button>
+                    <button class="filter-btn" data-category="breathing">Breathing</button>
+                    <button class="filter-btn" data-category="time-management">Time Management</button>
+                    <button class="filter-btn" data-category="affirmations">Affirmations</button>
+                    <button class="filter-btn" data-category="mood-boosters">Mood Boosters</button>
+                </div>
+                <div class="tips-container" id="tipsContainer">
+                    <!-- Tips will be loaded dynamically -->
+                    <div class="loading" aria-live="polite">Loading wellness tips...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Favorites Section -->
+        <section id="favorites" class="favorites-section">
+            <div class="container">
+                <h2 class="section-title">Your Favorite Tips</h2>
+                <div class="favorites-container" id="favoritesContainer">
+                    <div class="empty-state">
+                        <span class="empty-icon" aria-hidden="true">⭐</span>
+                        <p>No favorites yet. Start by bookmarking tips that resonate with you!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo" class="footer">
+        <div class="container">
+            <p>&copy; 2025 Student Wellness Platform. Built with 💚 for Republic Polytechnic students.</p>
+            <p class="footer-note">Remember: These tips are for general wellness. For serious mental health concerns, please consult with a healthcare professional.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-content">
+            <span class="toast-message"></span>
+            <button class="toast-close" aria-label="Close notification">&times;</button>
+        </div>
+    </div>    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+    
+    <!-- Chatbot Scripts -->
+    <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/07/03/12/20250703125139-A149B8ZV.js"></script>
+</body>
+</html>

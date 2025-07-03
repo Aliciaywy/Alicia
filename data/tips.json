@@ -1,0 +1,213 @@
+{
+  "tips": [
+    {
+      "id": "breathing-001",
+      "category": "breathing",
+      "title": "4-7-8 Breathing Technique",
+      "description": "A simple yet powerful breathing exercise that helps calm your nervous system. Inhale through your nose for 4 counts, hold your breath for 7 counts, then exhale through your mouth for 8 counts. This technique is perfect for reducing anxiety before exams or presentations.",
+      "duration": "2-3 minutes",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "breathing-002",
+      "category": "breathing",
+      "title": "Box Breathing",
+      "description": "Used by Navy SEALs and athletes for focus and calm. Breathe in for 4 counts, hold for 4, exhale for 4, hold empty for 4. Visualize drawing a square with your breath. Great for concentration during study sessions.",
+      "duration": "3-5 minutes",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "breathing-003",
+      "category": "breathing",
+      "title": "Belly Breathing",
+      "description": "Place one hand on your chest, one on your belly. Breathe slowly through your nose, ensuring only your belly hand moves. This activates your parasympathetic nervous system, reducing stress hormones.",
+      "duration": "5-10 minutes",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "breathing-004",
+      "category": "breathing",
+      "title": "Alternate Nostril Breathing",
+      "description": "A yoga technique that balances your nervous system. Use your thumb to close your right nostril, inhale through the left. Switch and exhale through the right. Continue alternating. Perfect for mental clarity before studying.",
+      "duration": "5-10 minutes",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "time-001",
+      "category": "time-management",
+      "title": "Pomodoro Study Sessions",
+      "description": "Work in focused 25-minute blocks followed by 5-minute breaks. After 4 pomodoros, take a longer 15-30 minute break. This technique prevents burnout and maintains high concentration levels throughout your study sessions.",
+      "duration": "25 minutes + breaks",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "time-002",
+      "category": "time-management",
+      "title": "Time Blocking Method",
+      "description": "Assign specific time blocks to different activities in your day. Include buffer time between tasks and color-code different types of work. This visual approach helps prevent overcommitment and reduces decision fatigue.",
+      "duration": "15 minutes planning",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "time-003",
+      "category": "time-management",
+      "title": "The Two-Minute Rule",
+      "description": "If a task takes less than two minutes, do it immediately instead of adding it to your to-do list. This prevents small tasks from accumulating and becoming overwhelming. Perfect for emails, quick research, or organizing notes.",
+      "duration": "2 minutes or less",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "time-004",
+      "category": "time-management",
+      "title": "Weekly Planning Ritual",
+      "description": "Every Sunday, spend 20 minutes reviewing the coming week. Identify your top 3 priorities, schedule challenging tasks for when you're most alert, and plan rewards for completing difficult work.",
+      "duration": "20 minutes weekly",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "time-005",
+      "category": "time-management",
+      "title": "Energy-Based Scheduling",
+      "description": "Track your energy levels throughout the day for a week. Schedule your most challenging work during high-energy periods and routine tasks during low-energy times. This maximizes productivity while reducing stress.",
+      "duration": "1 week tracking",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "affirmation-001",
+      "category": "affirmations",
+      "title": "Morning Confidence Boost",
+      "description": "Start each day with: 'I am capable of learning and growing. I approach challenges with curiosity and resilience. Today I will make progress toward my goals.' Say it aloud while looking in the mirror for maximum impact.",
+      "duration": "2-3 minutes",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "affirmation-002",
+      "category": "affirmations",
+      "title": "Exam Anxiety Affirmations",
+      "description": "Before exams, repeat: 'I have prepared well. I trust my knowledge and abilities. I remain calm and focused. My mind is clear and ready.' Combine with deep breathing for enhanced effectiveness.",
+      "duration": "3-5 minutes",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "affirmation-003",
+      "category": "affirmations",
+      "title": "Self-Compassion Statements",
+      "description": "When facing setbacks: 'I am learning and growing from this experience. It's okay to make mistakes – they help me improve. I treat myself with the same kindness I'd show a good friend.' Practice self-forgiveness.",
+      "duration": "2-3 minutes",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "affirmation-004",
+      "category": "affirmations",
+      "title": "Progress Recognition",
+      "description": "Weekly affirmation: 'I acknowledge the progress I've made, no matter how small. Every step forward matters. I celebrate my efforts and commitment to growth.' Write down specific examples of progress.",
+      "duration": "5 minutes weekly",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "affirmation-005",
+      "category": "affirmations",
+      "title": "Future Success Visualization",
+      "description": "Visualize your successful future self while saying: 'I am becoming the person I want to be. My daily actions align with my long-term goals. Success flows naturally from my consistent efforts.'",
+      "duration": "5-10 minutes",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "mood-001",
+      "category": "mood-boosters",
+      "title": "Gratitude Practice",
+      "description": "Each morning or evening, write down three specific things you're grateful for. Focus on small moments: a friend's text, a beautiful sunset, or understanding a difficult concept. Gratitude rewires your brain for positivity.",
+      "duration": "5 minutes daily",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "mood-002",
+      "category": "mood-boosters",
+      "title": "Movement Break",
+      "description": "Take a 5-minute movement break every hour. Do jumping jacks, stretch, dance to a favorite song, or walk around your study space. Physical movement instantly boosts mood and cognitive function.",
+      "duration": "5 minutes hourly",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "mood-003",
+      "category": "mood-boosters",
+      "title": "Nature Connection",
+      "description": "Spend time outdoors or bring nature indoors with plants. Even looking at nature photos or listening to nature sounds can reduce stress and improve mood. Aim for at least 20 minutes of nature exposure daily.",
+      "duration": "20 minutes daily",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "mood-004",
+      "category": "mood-boosters",
+      "title": "Social Connection Check-in",
+      "description": "Reach out to one person daily – send a text, make a call, or have a brief conversation. Social connections are crucial for mental health and can provide support during challenging times.",
+      "duration": "5-10 minutes daily",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "mood-005",
+      "category": "mood-boosters",
+      "title": "Creative Expression",
+      "description": "Engage in a creative activity for pure enjoyment: doodle, write in a journal, sing, play music, or try a craft. Creative expression reduces stress and provides a healthy outlet for emotions.",
+      "duration": "15-30 minutes",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "mood-006",
+      "category": "mood-boosters",
+      "title": "Random Acts of Kindness",
+      "description": "Perform one small act of kindness daily: compliment someone, help a classmate, donate to charity, or volunteer. Helping others releases endorphins and creates a positive feedback loop of well-being.",
+      "duration": "5-15 minutes",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "mood-007",
+      "category": "mood-boosters",
+      "title": "Mindful Eating Practice",
+      "description": "Choose one meal or snack daily to eat mindfully. Put away distractions, chew slowly, notice flavors and textures. This practice reduces stress eating and increases satisfaction with food.",
+      "duration": "10-20 minutes",
+      "difficulty": "beginner"
+    },
+    {
+      "id": "mood-008",
+      "category": "mood-boosters",
+      "title": "Success Celebration Ritual",
+      "description": "Create a personal ritual to celebrate achievements, no matter how small. Do a happy dance, treat yourself to something special, or share your success with someone who matters to you.",
+      "duration": "5-10 minutes",
+      "difficulty": "beginner"
+    }
+  ],
+  "categories": [
+    {
+      "id": "breathing",
+      "name": "Breathing Exercises",
+      "description": "Simple breathing techniques to reduce stress and increase focus",
+      "color": "#a2d2ff"
+    },
+    {
+      "id": "time-management",
+      "name": "Time Management",
+      "description": "Proven strategies to manage your time effectively and reduce overwhelm",
+      "color": "#b8f2e6"
+    },
+    {
+      "id": "affirmations",
+      "name": "Positive Affirmations",
+      "description": "Empowering statements to build confidence and maintain motivation",
+      "color": "#cdb4db"
+    },
+    {
+      "id": "mood-boosters",
+      "name": "Mood Boosters",
+      "description": "Activities and practices to lift your spirits and increase happiness",
+      "color": "#fefae0"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2025-01-23",
+    "totalTips": 24,
+    "targetAudience": "Republic Polytechnic Students",
+    "aiRecommendationEngine": "rules-based"
+  }
+}

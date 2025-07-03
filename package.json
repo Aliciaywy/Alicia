@@ -1,0 +1,52 @@
+{
+  "name": "mental-health-tips-mindfulness",
+  "version": "1.0.0",
+  "description": "Student Wellness Platform - Boost student well-being through personalized daily tips, mindfulness tools, and AI-powered wellness support",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server --port=3000 --open=/",
+    "build": "echo \"Static site - no build required\"",
+    "validate": "node -e \"require('./data/tips.json')\""
+  },
+  "keywords": [
+    "mental-health",
+    "wellness",
+    "mindfulness",
+    "student-support",
+    "stress-management",
+    "breathing-exercises",
+    "time-management",
+    "affirmations",
+    "mood-tracking"
+  ],
+  "author": "Republic Polytechnic Student Wellness Team",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/mental-health-tips-mindfulness.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/mental-health-tips-mindfulness/issues"
+  },
+  "homepage": "https://github.com/your-org/mental-health-tips-mindfulness#readme",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
