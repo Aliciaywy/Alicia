@@ -1,24 +1,24 @@
 {
-  "name": "ShoreSquad - Beach Cleanup Coordination",
-  "short_name": "ShoreSquad",
-  "description": "Rally your crew, track weather, and coordinate beach cleanups with ShoreSquad",
+  "name": "Mental Wellness Platform - Student Support",
+  "short_name": "Mental Wellness",
+  "description": "Personalized wellness tips, mindfulness tools, and mental health support for students",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0077be",
-  "theme_color": "#0077be",
+  "background_color": "#a2d2ff",
+  "theme_color": "#a2d2ff",
   "orientation": "portrait-primary",
-  "categories": ["environmental", "social", "utilities"],
+  "categories": ["health", "wellness", "education", "lifestyle"],
   "lang": "en",
   "scope": "/",
   "icons": [
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>",
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧘</text></svg>",
       "sizes": "192x192",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     },
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>",
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧘</text></svg>",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"
@@ -40,25 +40,25 @@
   ],
   "shortcuts": [
     {
-      "name": "Check Weather",
-      "short_name": "Weather",
-      "description": "Check current weather conditions for cleanup planning",
-      "url": "/#weather",
+      "name": "Check Mood",
+      "short_name": "Mood",
+      "description": "Quick mood check-in for personalized wellness recommendations",
+      "url": "/#mood",
       "icons": [
         {
-          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌤️</text></svg>",
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>😊</text></svg>",
           "sizes": "96x96"
         }
       ]
     },
     {
-      "name": "View Map",
-      "short_name": "Map",
-      "description": "Find beach cleanup locations near you",
-      "url": "/#map",
+      "name": "Mindfulness",
+      "short_name": "Breathe",
+      "description": "Quick breathing exercises and mindfulness tools",
+      "url": "/#mindfulness",
       "icons": [
         {
-          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>",
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🫁</text></svg>",
           "sizes": "96x96"
         }
       ]
