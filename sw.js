@@ -1,9 +1,9 @@
-// ShoreSquad Service Worker
+// Mental Wellness Platform Service Worker
 // Provides offline functionality and caching
 
-const CACHE_NAME = 'shoresquad-v1.0.0';
-const STATIC_CACHE = 'shoresquad-static-v1';
-const DYNAMIC_CACHE = 'shoresquad-dynamic-v1';
+const CACHE_NAME = 'mental-wellness-v1.0.0';
+const STATIC_CACHE = 'mental-wellness-static-v1';
+const DYNAMIC_CACHE = 'mental-wellness-dynamic-v1';
 
 // Files to cache for offline use
 const STATIC_FILES = [
@@ -17,20 +17,20 @@ const STATIC_FILES = [
 
 // Install event - cache static files
 self.addEventListener('install', event => {
-  console.log('🌊 ShoreSquad SW: Installing...');
+  console.log('🧘 Mental Wellness SW: Installing...');
   
   event.waitUntil(
     caches.open(STATIC_CACHE)
       .then(cache => {
-        console.log('🌊 ShoreSquad SW: Caching static files');
+        console.log('🧘 Mental Wellness SW: Caching static files');
         return cache.addAll(STATIC_FILES);
       })
       .then(() => {
-        console.log('🌊 ShoreSquad SW: Installation complete');
+        console.log('🧘 Mental Wellness SW: Installation complete');
         return self.skipWaiting();
       })
       .catch(error => {
-        console.error('🌊 ShoreSquad SW: Installation failed', error);
+        console.error('🧘 Mental Wellness SW: Installation failed', error);
       })
   );
 });
